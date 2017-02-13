@@ -13,10 +13,10 @@ app.get('/art1',function(req, res){
 	res.sendFile(path.join(__dirname, 'ui', 'art1.html'));
 });
 app.get('/art2',function(req,res){
-	res.send('Article 2 place holder');
+	res.sendFile(path.join(__dirname, 'ui', 'art2.html'));
 });
 app.get('/art3',function(req,res){
-	res.send('Article 3 place holder');
+	res.sendFile(path.join(__dirname, 'ui', 'art3.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
