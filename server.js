@@ -10,10 +10,13 @@ app.get('/', function (req, res) {
 });
 
 app.get('/art1',function(req, res){
-	res.sendFile('Please wait');
+	res.send('Please wait');
 });
 app.get('/art2',function(req,res){
-	res.sendFile('Article 2 place holder');
+	res.send('Article 2 place holder');
+});
+app.get('/art3',function(req,res){
+	res.send('Article 3 place holder');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
